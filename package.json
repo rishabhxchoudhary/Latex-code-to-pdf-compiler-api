@@ -1,0 +1,20 @@
+{
+  "name": "contravault_upload_backend",
+  "type": "module",
+  "scripts": {
+    "start": "npx tsx index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tsx": "^4.19.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-latex": "^3.1.0"
+  }
+}
