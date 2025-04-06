@@ -24,7 +24,7 @@ app.post('/api/compile-latex', (req: Request, res: Response) => {
   try {
     console.log("compiling pdf");
     const pdfChunks: Buffer[] = [];
-    const pdfStream = latex(code);
+    const pdfStream = latex(code, { args: ['-interaction=nonstopmode'] });
 
     pdfStream.on('data', (chunk: Buffer) => {
       pdfChunks.push(chunk);
